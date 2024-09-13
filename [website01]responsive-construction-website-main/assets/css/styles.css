@@ -259,6 +259,42 @@ img {
   gap: 1rem;
 }
 
+.home__info{
+  display: flex;
+  justify-content: center;
+  column-gap: 4.5rem;
+}
+
+.home__info-title{
+  color: var(--second-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: .5rem;
+}
+
+.home__info-description{
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+}
+
+.home__images{
+  position: relative;
+  justify-self: center;
+}
+
+.home__img-1{
+  width: 250px;
+  margin-left: 3.5rem;
+}
+
+.home__img-2{
+  width: 150px;
+  border: 5px solid var(--black-color);
+  position: absolute;
+  left: 0;
+  bottom: -3.5rem;
+}
+
 /*=============== BUTTON ===============*/
 .button{
   display: inline-flex;
