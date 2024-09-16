@@ -23,7 +23,19 @@ if(navClose){
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+const changeGbHeader = () =>{
+    const header = document.getElementById("header");
+    if (this.scrollY >= 50) {
+        console.log(1);
+        
+        header.classList.add('bg-header')
+    }else {
+        header.classList.remove('bg-header')
+    }
+}
 
+window.addEventListener("scroll", changeGbHeader)
+changeGbHeader()
 
 /*=============== SWIPER SERVICES ===============*/ 
 
