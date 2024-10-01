@@ -456,8 +456,25 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.services_title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .5rem;
+}
+
 
 /* Swiper class */
+/* Download assets from https://swiperjs.com/get-started
+swiper-bundle.min.css
+swiper-bundle.min.js */
+.swiper{
+  margin-inline: initial;
+  padding-bottom: 4rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
 
 
 /*=============== PROJECTS ===============*/
