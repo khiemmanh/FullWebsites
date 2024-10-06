@@ -39,6 +39,7 @@ changeGbHeader()
 
 /*=============== SWIPER SERVICES ===============*/ 
 const swiperServices = new Swiper('.service__swiper', {
+    // https://swiperjs.com/swiper-api#parameters
     loop: true,
     grabCursor: true,
     spaceBetween: 24,
@@ -49,6 +50,10 @@ const swiperServices = new Swiper('.service__swiper', {
     },
   });
 
+//   const x = 8;
+//   const total = 5;
+//   console.log((x - 1 + total) % total);
+  
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
