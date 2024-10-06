@@ -506,7 +506,44 @@ swiper-bundle.min.js */
 }
 
 /*=============== PROJECTS ===============*/
+.projects{
+  background-color: var(--black-color);
+}
 
+.projects .section__title{
+  color: var(--white-color);
+}
+
+.projects__container{
+  padding-block: 1.5rem 3rem;
+}
+
+.projects_card{
+  background-color: var(--container-color);
+  border: 2px solid transparent;
+  background-clip: content-box; /* Hình nền sẽ bao phủ toàn bộ khu vực, bao gồm cả viền (border), padding và nội dung (content). */
+  transition: border-color .4s;
+}
+
+.projects_card:hover{
+  border-color: var(--first-color);
+}
+
+.projects__data{
+  padding: 1.5rem 1rem 3rem;
+}
+
+.projects__title{
+  font-size: var(--h2-font-size);
+  margin-block: .5rem;
+}
+
+.projects__date{
+  display: block;
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
 
 /*=============== CONTACT ===============*/
 
