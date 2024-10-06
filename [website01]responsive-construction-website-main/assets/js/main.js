@@ -25,8 +25,9 @@ if(navClose){
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const changeGbHeader = () =>{
     const header = document.getElementById("header");
+    // console.log(this.scrollY);
     if (this.scrollY >= 50) {
-        console.log(1);
+        // console.log(this.scrollY);
         
         header.classList.add('bg-header')
     }else {
