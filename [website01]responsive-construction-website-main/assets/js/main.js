@@ -56,7 +56,15 @@ const swiperServices = new Swiper('.service__swiper', {
 //   console.log((x - 1 + total) % total);
   
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+    const scrollUp = document.getElementById('scroll-up')
+    //when the scroll is high then 350 viewport height, and the show-scroll class to the a tag with the scroll
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
 
+window.addEventListener('scroll', scrollUp);
+scrollUp();
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
