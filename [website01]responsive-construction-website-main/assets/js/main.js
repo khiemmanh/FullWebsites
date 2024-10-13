@@ -5,7 +5,7 @@ const navMenu = document.getElementById('nav-menu'),
 
 // show menu
 if(navToggle){
-    console.log(navClose);
+    // console.log(navClose);
     
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
@@ -57,6 +57,8 @@ const swiperServices = new Swiper('.service__swiper', {
   
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
+    // console.log(this.scrollY);
+    
     const scrollUp = document.getElementById('scroll-up')
     //when the scroll is high then 350 viewport height, and the show-scroll class to the a tag with the scroll
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
@@ -67,6 +69,27 @@ window.addEventListener('scroll', scrollUp);
 scrollUp();
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () =>{
+    const scrollDown = window.scrollY;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+                sectionTop = current.offsetTop - 58,
+                sectionId = current.getAttribute('id'),
+                sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+            sectionClass.classList.add('active-link')
+        }else{
+            sectionClass.classList.remove('active-link')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive)
+
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
