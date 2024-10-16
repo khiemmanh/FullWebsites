@@ -745,9 +745,128 @@ swiper-bundle.min.js */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px) {
+  .container{
+    margin-inline: 1rem;
+  }
 
+  .section__title{
+    font-size: 1.25rem;
+  }
+
+  .home__title{
+    font-size: 1.75rem;
+  }
+
+  .home__buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__img-1{
+    width: 200px;
+    margin-left: 1.5rem;
+  }
+
+  .about__list{
+    grid-template-columns: repeat(1, 200px);
+  }
+
+  .about__img-1{
+    width: 150px;
+    left: 4rem;
+  }
+
+  .about__img-2{
+    width: 200px;
+    margin-right: 0;
+  }
+
+  .footer__content{
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+  }
+}
 
 /* For medium devices */
+@media screen and (min-width: 540px) {
+  .home__container,
+  .about__container,
+  .services__container,
+  .projects__container,
+  .contact__container{
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
 
+  .footer__content{
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu{
+    width: 50%;
+  }
+
+  .projects__container{
+    grid-template-columns: repeat(2, 330px);
+  }
+
+  .contact__data{
+    grid-template-columns: repeat(2, 240px);
+  }
+
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+}
 
 /* For large devices */
+@media screen and (min-width: 1150px) {
+
+  .container{
+    margin-inline: auto;
+  }
+
+  .section{
+    padding-block: 7rem 2rem;
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+  }
+
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+
+  .nav__menu{
+    width: initial;
+  }
+
+  .nav__list{
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4rem;
+  }
+
+  .nav__menu .nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-header .nav__link{
+    color: var(--text-color);
+  }
+
+  .bg-header .active-link,
+  .bg-header .nav__link:hover{
+    color: var(--first-color);
+  }
+}
+
